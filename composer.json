@@ -8,7 +8,7 @@
         "ext-soap": "*"
     },
     "require-dev": {
-        "simplesamlphp/simplesamlphp": ">=1.14",
+        "simplesamlphp/simplesamlphp": ">=1.15",
         "phpunit/phpunit": "~3.7"
     },
     "autoload-dev": {
