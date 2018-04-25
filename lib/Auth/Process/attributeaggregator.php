@@ -237,7 +237,8 @@ class sspmod_attributeaggregator_Auth_Process_attributeaggregator extends Simple
                     $response->getStatus()['Code'].')');
             }
             // merge attributes
-            $assertion = $response->getAssertions()[0]; // TODO Can there be more than 1?
+            $assertions = sspmod_saml_Message::processResponse($this->selfMetadata, $this->aaMetadata, $response, false);
+            $assertion = $assertions[0]; // TODO Can there be more than 1?
             if (empty($assertion)) {
                 throw new RuntimeException('Got an empty SAML Response');
             }
