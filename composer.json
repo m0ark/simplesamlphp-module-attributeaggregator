@@ -2,13 +2,18 @@
     "name": "niif/simplesamlphp-module-attributeaggregator",
     "description": "Attribute Aggregator implementation or SAML AttributeQuery",
     "type": "simplesamlphp-module",
+    "autoload": {
+        "psr-4": {
+            "SimpleSAML\\Module\\attributeaggregator\\": "lib/"
+        }
+    },
     "require": {
         "simplesamlphp/composer-module-installer": "~1.1",
         "simplesamlphp/saml2": ">=3.0",
         "ext-soap": "*"
     },
     "require-dev": {
-        "simplesamlphp/simplesamlphp": ">=1.14",
+        "simplesamlphp/simplesamlphp": ">=1.16",
         "phpunit/phpunit": "~3.7"
     },
     "autoload-dev": {
